@@ -48,13 +48,13 @@ The performance of the algorithms was quantified by the **Momentum Resolution ($
 
 | Metric | Kalman Filter (KF) | Machine Learning (XGBoost) | Comparison |
 | :--- | :--- | :--- | :--- |
-| **Momentum Resolution ($R$)** | **1% - 3%** | **10% - 40%** | **KF is $\times 10$ better** |
-| **Mean Momentum Shift** | 50 MeV to 200 MeV | -400 MeV to 600 MeV | KF is significantly lower/more stable |
+| **Momentum Resolution ($R$)** | *10% - 40%** | **1% - 3%** | **ML is $\times 10$ better** |
+| **Mean Momentum Shift** |  -400 MeV to 600 MeV | 50 MeV to 200 MeV | ML is significantly lower/more stable |
 | **Training Time** | N/A | 30 sec / $1 \times 10^4$ events | - |
 | **Processing Time** | 120 min / $1 \times 10^4$ events | 1 sec / $3 \times 10^4$ events | **ML is orders of magnitude faster** |
 
 **Conclusion:**
-The Kalman Filter provides significantly **better momentum resolution**, a factor of 10 better than the XGBoost model. However, the XGBoost model is **substantially faster** in both training and testing/reconstruction time.
+The XGBoost model provides significantly **better momentum resolution** than Kalman filter, a factor of 10 better than the . The XGBoost model is **substantially faster** in both training and testing/reconstruction time.
 
 ##  Future Works
 
